@@ -1,0 +1,20 @@
+@import "_reset";
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+}

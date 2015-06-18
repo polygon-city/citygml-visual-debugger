@@ -1,0 +1,58 @@
+{
+  "name": "citygml-visual-debugger",
+  "version": "0.0.1",
+  "author": "Robin Hawkes <rob@vizicities.com>",
+  "description": "Takes a single CityGML <cityObjectMemeber> element and visualises it in various ways for debugging geometry issues.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polygon-city/citygml-visual-debugger.git"
+  },
+  "keywords": [
+    "citygml",
+    "mapping",
+    "3d",
+    "debugging"
+  ],
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "browser-sync": "^2.7.10",
+    "browserify": "^10.2.4",
+    "citygml-boundaries": "^0.1.1",
+    "citygml-points": "^0.1.1",
+    "citygml-polygons": "^0.1.1",
+    "del": "^1.2.0",
+    "express": "^4.12.4",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-changed": "^1.2.1",
+    "gulp-gzip": "^1.1.0",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.11.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "lapack": "^0.1.0",
+    "lodash": "^3.9.3",
+    "material-ui": "^0.9.1",
+    "morgan": "^1.6.0",
+    "points-3d-to-2d": "^0.1.1",
+    "pretty-hrtime": "^1.0.0",
+    "react": "^0.13.3",
+    "react-tap-event-plugin": "^0.1.7",
+    "reactify": "^1.1.1",
+    "run-sequence": "^1.1.0",
+    "uglifyify": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.2",
+    "zepto-browserify": "^1.1.6-1"
+  },
+  "scripts": {},
+  "dependencies": {
+    "points-3d-to-2d": "^0.1.2"
+  }
+}
