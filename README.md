@@ -7,7 +7,8 @@ Takes a single CityGML `<cityObjectMemeber>` element and visualises it in variou
 ## Installation
 
 1. Install Gulp using `npm install -g gulp`
-2. Run `gulp dev` from the repo directory (browser will open with the app)
+2. Run `npm install` from the repo directory
+3. Run `gulp dev` from the same directory and eventually the browser will open
 
 ## References
 
