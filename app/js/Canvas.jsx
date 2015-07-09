@@ -1,5 +1,6 @@
 var React = require("react");
 var _ = require("lodash");
+var polygon = require("polygon");
 
 var Canvas = React.createClass({
   componentDidMount: function() {
@@ -8,6 +9,16 @@ var Canvas = React.createClass({
     });
 
     this.debugPolygon(this.props.points, this.props.name);
+  },
+
+  isPolygonValid: function(polygon) {
+    var poly = new Polygon(polygon);
+
+    if (Math.abs(poly.area()) > 0) {
+      return true;
+    } else {
+      return false;
+    }
   },
 
   debugPolygon: function(polygon, name, size) {
@@ -25,9 +36,15 @@ var Canvas = React.createClass({
 
     ctx.strokeStyle = "rgba( 0, 0, 0, 1.0 )";
 
-    // Paint background white
+    var valid = this.isPolygonValid(polygon);
 
-    ctx.fillStyle = "rgba( 255, 255, 255, 1.0 )";
+    // Paint background based on polygon validity
+    if (valid) {
+      ctx.fillStyle = "rgba( 255, 255, 255, 1 )";
+    } else {
+      ctx.fillStyle = "rgba(231, 158, 158, 1)";
+    }
+
     ctx.fillRect(0, 0, size, size);
 
     // Label polygon
